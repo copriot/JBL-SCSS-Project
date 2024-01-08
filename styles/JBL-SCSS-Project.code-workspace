@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay",
+		"liveServer.settings.multiRootWorkspaceName": "JBL-SCSS-Project"
+	}
+}
