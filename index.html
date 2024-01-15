@@ -4,41 +4,277 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JBL-PROJECT</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
     <!-- bs-icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- header -->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">JBL</a>
+        <a href="#" class="nav__logo"> JBL </a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#">Anasayfa</a>
+              <a href="#" class="nav__link">Anasayfa</a>
             </li>
             <li class="nav__item">
-              <a href="#">Hakkımızda</a>
+              <a href="#" class="nav__link">Hakkımızda</a>
             </li>
             <li class="nav__item">
-              <a href="#">Favoriler</a>
+              <a href="#" class="nav__link">Favoriler</a>
             </li>
             <li class="nav__item">
-              <a href="#">Modeller</a>
+              <a href="#" class="nav__link">Modeller</a>
             </li>
           </ul>
           <!-- close-button -->
-          <div class="nav__close" id="nav__close">
+          <div class="nav__close" id="nav-close">
             <i class="bi bi-x"></i>
             <!-- menu-toggle-button -->
             <div class="nav__toggle" id="nav-toggle">
               <i class="bi bi-list"></i>
             </div>
-
           </div>
         </div>
       </nav>
     </header>
+    <!-- header-end -->
+    <!-- main -->
+    <main class="main">
+      <!-- home -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <img src="images/home-img.png" alt="JBL" class="home__img" />
+            <h1 class="home__title">
+              <span>J</span>
+              <span>B</span>
+              <span>L</span>
+            </h1>
+
+            <div class="home__tooltip">
+              <img
+                src="images/tooltip-right.svg"
+                class="home__tooltip-img"
+                alt="" />
+              <span class="home__tooltip-text">$150</span>
+            </div>
+          </div>
+
+          <a href="#" class="home__button button"
+            >Buy Now
+            <i class="bi bi-play-circle-fill"></i>
+          </a>
+
+          <div class="home__social">
+            <span class="home__social-text">Follow US</span>
+            <div class="home__social-links">
+              <a href="#" class="home__social-link">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="home__social-link">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="home__social-link">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about -->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title">More About US</h2>
+
+            <p class="about__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+              itaque eveniet alias, ab quas aliquam dolores? Optio accusantium
+              maxime ipsam distinctio, illo deleniti nostrum, saepe, unde porro
+              vel aspernatur repellendus.
+            </p>
+
+            <a href="#" class="button"
+              >Know More <i class="bi bi-info-circle"></i
+            ></a>
+            <img src="images/about-img.png" alt="" class="about__img" />
+          </div>
+        </div>
+      </section>
+      <!-- favorite -->
+      <section class="favorite section">
+        <h2 class="section-title">Choose your favorite</h2>
+        <div class="favorite-container">
+          <div class="favorite-card">
+          <div>
+            
+            <article class="favorite-article">
+              <img
+                src="images/favorite-1.png"
+                alt="image"
+                class="favorite__img" />
+                <span class="favorite-model">Black Model<span>
+            </article>
+            <article class="favorite-article">
+              <img
+                src="images/favorite-2.png"
+                alt="image"
+                class="favorite__img" />
+                <span class="favorite-model">White Model<span>
+            </article>
+            <article class="favorite-article">
+              <img
+                src="images/favorite-3.png"
+                alt="image"
+                class="favorite__img" />
+                <span class="favorite-model">Red Model<span>
+            </article>
+            <article class="favorite-article">
+              <img
+                src="images/favorite-4.png"
+                alt="image"
+                class="favorite__img" />
+                <span class="favorite-model">Teal Model<span>
+            </article>
+          </div>
+        </div>
+        </div>
+      </section>
+      <!-- model -->
+      <section class="model section" id="model">
+        <h2 class="section__title">Model Specifications</h2>
+        <div class="model__container container grid">
+          <div class="model__content">
+            <img src="images/model-img.png" alt="" class="model__img" />
+            <div class="model__tooltip model__tooltip-1">
+              <img
+                src="images/tooltip-right.svg"
+                alt=""
+                class="model__tooltip-img"
+              />
+              <span class="model__tooltip-text">Best Confort</span>
+            </div>
+            <div class="model__tooltip model__tooltip-2">
+              <img
+                src="images/tooltip-right.svg"
+                alt=""
+                class="model__tooltip-img"
+              />
+              <span class="model__tooltip-text">Easy Adjustment</span>
+            </div>
+            <div class="model__tooltip model__tooltip-3">
+              <img
+                src="images/tooltip-right.svg"
+                alt=""
+                class="model__tooltip-img"
+              />
+              <span class="model__tooltip-text">Fast Charge</span>
+            </div>
+            <div class="model__tooltip model__tooltip-4">
+              <img
+                src="images/tooltip-right.svg"
+                alt=""
+                class="model__tooltip-img"
+              />
+              <span class="model__tooltip-text">Custom Audio </span>
+            </div>
+          </div>
+          <a href="#" class="model__button button"
+            >Buy Now <i class="bi bi-play-circle-fill"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- sponsor -->
+      <section class="sponsor section">
+        <div class="container grid sponsor__container">
+          <img src="images/sponsor-1.png" alt="sponsor-img" class="sponsor__img">
+          <img src="images/sponsor-2.png" alt="sponsor-img" class="sponsor__img">
+          <img src="images/sponsor-3.png" alt="sponsor-img" class="sponsor__img">
+          <img src="images/sponsor-4.png" alt="sponsor-img" class="sponsor__img">
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__container container grid">
+          <div>
+            <a href="#" class="footer__logo">JBL</a>
+          </div>
+          <div class="footer__data grid">
+            <div>
+              <h3 class="footer__title">Products</h3>
+              <ul class="footer__links">
+                <li>
+                  <a href="" class="footer__link">Headphones</a>
+                </li>
+                <li>
+                  <a href="" class="footer__link">Earphones</a>
+                </li>
+                <li>
+                  <a href="" class="footer__link">Earbuds</a>
+                </li>
+                <li>
+                  <a href="" class="footer__link">Accesories</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Support</h3>
+              <ul class="footer__links">
+                <li>
+                  <a href="" class="footer__link">Product Help</a>
+                </li>
+                <li>
+                  <a href="" class="footer__link">Register</a>
+                </li>
+                <li>
+                  <a href="" class="footer__link">Updates</a>
+                </li>
+                <li>
+                  <a href="" class="footer__link">Provides</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="footer__group">
+              <form action="" class="footer__form">
+                <input type="text" placeholder="Email">
+                <button class="footer__button button">Subscribe <i class="bi bi-send"></i></button>
+              </form>
+            </div>
+
+
+          </div>
+          <div class="footer__social">
+            <div>
+              <a href="" class="footer__social-link">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="" class="footer__social-link">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="" class="footer__social-link">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </div>
+            <span class="footer__copy blink">&#169; Designed By Dev.Zek</span>
+          </div>
+      
+        </div>
+      </footer>
+    </main>
+
+    <!-- main-end -->
+
+    <script src="main.js"></script>
   </body>
 </html>

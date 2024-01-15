@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
 @import "header";
+@import "home";
+@import "button";
+@import "about";
+@import "favorite";
+@import "model";
+@import "sponsor";
+@import "footer";
+@import "responsive";
 
 *{
     margin: 0;
@@ -9,7 +17,7 @@
 
 :root {
     --header-height: 56px;
-    --first-color: hsl(23, 100%, 50%);
+    --first-color: hsl(83, 84%, 61%);
     --gradient-color: linear-gradient(
       90deg,
       hsl(23, 4%, 28%) 0%,
@@ -34,6 +42,20 @@
     --z-tooltip: 10;
     --z-fixed: 100;
   }
+  @media screen and (min-width: 1150px){
+  
+:root{
+  --biggest-font-size: 400px;
+  --h1-font-size: 36px;
+  --h2-font-size: 24px;
+  --h3-font-size: 20px;
+  --normal-font-size: 16px;
+  --small-font-size: 14px;
+  --smaller-font-size: 13px;
+}    
+}
+    
+  
 
   body{
     display: flex;
@@ -59,4 +81,26 @@
   .container {
     max-width: 1120px;
     margin-inline: 24px;
+  }
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .grid{
+    display: grid;
+    gap: 24px;
+  }
+  .section{
+     padding-block: 80px 16px; 
+    // border: 2px solid red;
+
+  }
+  .section__title{
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .main{
+    overflow: hidden;
   }

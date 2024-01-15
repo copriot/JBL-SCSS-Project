@@ -1,0 +1,98 @@
+.footer {
+    padding-block: 32px;
+    overflow: hidden;
+    display: grid;
+    margin-left: 40px;
+    &__container {
+    }
+    &__logo {
+      font-size: var(--h2-font-size);
+      font-weight: var(--font-semi-bold);
+      color: var(--first-color);
+    }
+    &__data {
+      grid-template-columns: repeat(3, 200px);
+   
+   
+    }
+    &__title {
+      font-size: var(--h3-font-size);
+      margin-bottom: 25px;
+    }
+    &__links {
+      display: grid;
+      row-gap: 12px;
+    }
+    &__link {
+      color: var(--text-color);
+      transition: all 0.3s;
+      &:hover {
+        color: var(--first-color);
+      }
+    }
+    &__group {
+      display: grid;
+      place-items: center;
+      input {
+        border: none;
+        outline: none;
+        padding: 20px 30px;
+        border-radius: 64px;
+        margin-bottom: 20px;
+        background-color: var(--container-color);
+        color: var(--text-color);
+      }
+    }
+    &__button {
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+    &__social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      flex-direction: column;
+
+      div {
+        display: flex;
+        gap: 16px;
+        margin: 10px;
+        a {
+          color: var(--text-color);
+          transition: all 0.5s ease-in-out;
+          &:hover {
+            color: var(--first-color);
+          }
+        }
+      }
+    }
+}
+
+
+.blink {
+  width: 200px;
+  height: 50px;
+  padding: 15px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+.footer__copy {
+  font-size: 25px;
+  font-family: cursive;
+  color: var(-color);
+  animation: blink 1.2s linear infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,114 @@
+@media screen and (min-width: 1150px) {
+    .container {
+      margin-inline: auto;
+    }
+    .section {
+      padding: 112px 32px;
+    }
+    .section__title {
+      font-size: var(--h1-font-size);
+    }
+    .nav__toggle,
+    .nav__close {
+      display: none;
+    }
+    .nav__list {
+      flex-direction: row;
+      column-gap: 72px;
+    }
+    .home {
+      &__container {
+        position: relative;
+      }
+      &__img {
+        width: 500px;
+      }
+      &__title {
+        font-size: var(--biggest-font-size);
+      }
+      &__tooltip {
+        right: 96px;
+        &-img {
+          width: initial;
+        }
+        &-text {
+          font-size: var(--normal-font-size);
+          transform: translate(82px, -52px);
+        }
+      }
+      &__social-text {
+        font-size: var(--normal-font-size);
+      }
+      &__social-links {
+        row-gap: 16px;
+      }
+      &__social-link {
+        font-size: 24px;
+      }
+    }
+    .about.about__container {
+      display: grid;
+      grid-template-columns: 400px 500px;
+      align-items: center;
+      column-gap: 80px;
+    }
+    .about__data.section__title,
+    .about__data {
+      text-align: initial;
+    }
+    .about.about__description {
+      margin-bottom: 16px;
+    }
+    .about.about__img {
+      width: 500px;
+    }
+  
+    .favorite__container {
+      max-width: 1100px;
+      margin-inline: auto;
+    }
+    .favorite__img {
+      width: 500px;
+    }
+    .model {
+      &__img {
+        width: 600px;
+      }
+      &__tooltip {
+        &-img {
+          width: initial;
+        }
+        &-text {
+          font-size: var(--normal-font-size);
+          padding: 8px 20px;
+          transform: translate(82px, -56px);
+        }
+        &-1 {
+          top: 160px;
+          left: 200px;
+        }
+        &-2 {
+            transform: initial;
+          top: 64px;
+          right: -24px;
+        }
+        &-3 {
+            transform: scaleX(-1);
+          left:20;
+          bottom: 100px;
+        }
+      }
+    }
+    .model__tooltip-3 .model__tooltip-text {
+        transform: translate(82px, -56px) scaleX(-1);
+      }
+      .sponsor__container {
+        grid-template-columns: repeat(4, max-content);
+      }
+      .footer{
+        grid-template-columns: 400px 500px;
+        
+      }
+      
+  }
+  
