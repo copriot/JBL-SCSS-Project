@@ -24,4 +24,4 @@ Proje Açıklaması: SAAS'ın parçalanabilir yapısıyla oluşturulan bir sayfa
 ## Ekran Görüntüsü
 
 
-![](JBLVIDEO-ezgif.com-video-to-gif-converter)
+![](JBL-page.gif)
